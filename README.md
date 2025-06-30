@@ -24,15 +24,19 @@ git clone https://github.com/viejopeter/flask-person-api.git cd your-repo
 
 2. Create a virtual environment and activate it:
 
-python -m venv .venv .venv\Scripts\activate
+python3 -m venv .venv
 
-3. Install dependencies:
+3. Go inside virtual environment:
+
+source .venv/bin/activate
+
+4. Install dependencies:
 
 pip install Flask
 
-4. Run the server:
+5. Run the server:
 
-python server.py
+flask --app server --debug run
 
 ## API Endpoints
 
